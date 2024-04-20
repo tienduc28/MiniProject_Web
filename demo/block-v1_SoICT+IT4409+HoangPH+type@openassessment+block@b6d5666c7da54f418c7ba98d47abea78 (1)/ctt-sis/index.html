@@ -1,0 +1,259 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTTBK Mainpage</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/39a5798836.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header -->
+    <!-- <header>
+        <img src="./img/logo-cttdt.png" alt="" >
+    </header>
+    <nav class="nav-wrapper">
+        <div class="nav-container">
+            <a href="" class="nav-item">Đào tạo Đại học</a>
+            <a href="" class="nav-item">Đào tạo Sau đại học</a>
+            <a href="" class="nav-item">Công tác Sinh viên</a>
+            <a href="" class="nav-item">Tra cứu văn bằng</a>
+        </div>
+    </nav> -->
+
+
+
+    <!-- Content -->
+    <!-- Side bar -->
+    <div class="main-content-wrapper">
+        <div class="sidebar">
+            <div class="content-menu">
+                <div class="content-title">
+                    <img src="./img/square-profile.jpg" style="width: 30px;height: 30px; border-radius: 50%; margin-right: 5px;">
+                    <h3>NGUYỄN VIẾT THUẬN</h3>
+                </div>
+                <a href="" class="content-item">Thư báo <span class="badge" style="background-color:#9C1010;">0</span></a>
+                <a href="" class="content-item">Đổi mật khẩu</a>
+                <a href="" class="content-item">Cấp lại mật khẩu Email trường</a>
+                <a href="" class="content-item">Thoát đăng nhập</a>
+                <a href="" class="content-item">Thông tin mật khẩu Email cấp mới</a>
+                <a href="" class="content-item">Xác nhận khai báo y tế</a>
+                <br>
+            </div>
+            <div class="content-menu">
+                <div class="content-title">
+                    <h3>QUẢN LÝ HỒ SƠ SINH VIÊN</h3>
+                </div>
+                <a href="" class="content-item">Thông tin sinh viên</a>
+                <a href="" class="content-item">Cập nhật thông tin cá nhân</a>
+                <a href="" class="content-item">Thông tin lớp sinh viên</a>
+                <br>
+            </div>
+            <div class="content-menu">
+                <div class="content-title">
+                    <h3>Đào tạo</h3>
+                </div>
+                <a href="" class="content-item">Chương trình đào tạo</a>
+                <a href="" class="content-item">Kế hoạch học tập</a>
+                <a href="" class="content-item">Kết quả học tập</a>
+                <a href="" class="content-item">Đồ án - Tốt nghiệp</a>
+                <a href="" class="content-item">Thời khóa biểu tạm thời</a>
+                <br>
+            </div>
+            <div class="content-menu">
+                <div class="content-title">
+                    <h3>Tư vấn trực tuyến</h3>
+                </div>
+                <a href="" class="content-item">Hỏi đáp - Tư vấn trực tuyến</a>
+                <br>
+            </div>
+            <div class="content-menu">
+                <div class="content-title">
+                    <h3>Tài chính học vụ</h3>
+                </div>
+                <a href="" class="content-item">Thông tin công nợ học phí</a>
+                <a href="" class="content-item">Thanh toán học phí trực tuyến</a>
+                <br>
+            </div>
+            <div class="content-menu">
+                <div class="content-title">
+                    <h3>Dịch vụ hành chính</h3>
+                </div>
+                <a href="" class="content-item">ĐK cấp giấy tờ</a>
+                <br>
+            </div>
+        </div>
+
+
+        <!-- Main content -->
+        <div class="main-content-container">
+            <div class="main-content-title" style="display: flex; justify-content: center;"><h3 style="width: 98%;text-align: center;border-bottom: 1px solid #eee;">THÔNG TIN CÁ NHÂN</h3></div>
+            <div class="main-content">
+                <h3 style="padding: 25px 0; display: flex; align-items: center;">THÔNG TIN SINH VIÊN <a href="./edit.html" class="edit-btn"><i class="fa-regular fa-pen-to-square" style="font-size: 40px;"></i></a></h3>
+                <hr>
+                <div class="main-content-info">
+                    <div class="main-content-item" style="width: 25%;display: flex;flex-direction: column;justify-content: center;align-items: center;">
+                        <div class="profile-img"><img src="./img/profile.jpg" ></div>
+                        <div class="student-id student-info" style="text-align: center;"><span class="info">MSSV:</span> 20210826</div>
+                    </div>
+                        <div class="main-content-item" style="width: 33.33333333%;">
+                            <ul class="student-info-list">
+                                <li class="student-info">
+                                    <span class="info">Họ và tên &emsp; :</span> 
+                                    <span id="name_">Nguyễn Viết Thuận</span></li>
+                                <li class="student-info">
+                                    <span class="info">Năm vào trường &emsp; :</span> 
+                                    <span id="year">2021</span></li>
+                                <li class="student-info">
+                                    <span class="info">Bậc đào tạo &emsp; :</span> 
+                                    <span id="level">KSCLC-TN-TT-VN-ICT</span></li>
+                                <li class="student-info">
+                                    <span class="info">Chương trình &emsp; :</span> 
+                                    <span id="program">Công nghệ thông tin Global ICT 2021</span></li>
+                                <li class="student-info">
+                                    <span class="info">Khoa/Viện quản lý &emsp; :</span>  
+                                    <span id="school">Trường Công nghệ thông tin và Truyền thông</span></li>
+                                <li class="student-info">
+                                    <span class="info">Tình trạng học tập &emsp; :</span> 
+                                    <span id="status_">Học</span></li>
+                            </ul>
+                        </div>
+                        <div class="main-content-item" style="width: 33.33333333%; margin-left: 30px;">
+                            <ul class="student-info-list">
+                                <li class="student-info">
+                                    <span class="info">Giới tính &emsp; :</span> 
+                                    <span id="gender">Nam</span></li>
+                                <li class="student-info">
+                                    <span class="info">Lớp &emsp; :</span> 
+                                    <span id="class">ICT 02-K66</span></li>
+                                <li class="student-info">
+                                    <span class="info">Khóa học &emsp; :</span> 
+                                    <span id="course">66</span></li>
+                                <li class="student-info">
+                                    <span class="info">Email &emsp; :</span> 
+                                    <span id="email">thuan.nv210826@sis.hust.edu.vn</span></li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+
+            <div class="main-content">
+                <h3 style="padding: 25px 0;">THÔNG TIN HỌC TẬP</h3>
+                <hr>
+                <div class="main-content-info">
+                    <div class="main-content-item" style="width: 50%;">
+                        <ul class="student-info-list">
+                            <li class="student-info"><span class="info">Tổng kết học kỳ &emsp; :</span> 20231</li>
+                            <li class="student-info"><span class="info">Trung bình tích lũy &emsp; :</span> 3.45</li>
+                            <li class="student-info"><span class="info">Số TC nợ đăng ký &emsp; :</span> 0</li>
+                        </ul>
+                    </div>
+                    <div class="main-content-item" style="width: 50%; margin-left: 30px;">
+                        <ul class="student-info-list">
+                            <li class="student-info"><span class="info">Số TC tích lũy &emsp; :</span> 88</li>
+                            <li class="student-info"><span class="info">Trình độ sinh viên &emsp; :</span> 3</li>
+                            <li class="student-info"><span class="info">Mức cảnh báo &emsp; :</span> M0</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="main-content">
+                <h3 style="padding: 25px 0;">THÔNG TIN CÁ NHÂN</h3>
+                <hr>
+                <div class="main-content-info">
+                    <div class="main-content-item" style="width: 50%;">
+                        <ul class="student-info-list">
+                            <li class="student-info"><span class="info">Dân tộc &emsp; :</span> TÀY</li>
+                            <li class="student-info"><span class="info">Năm TN cấp 3 &emsp; :</span> 2021</li>
+                            <li class="student-info"><span class="info">Địa chỉ &emsp; :</span> PHƯỜNG NGỌC XUÂN, THÀNH PHỐ CAO BẰNG, TỈNH CAO BẰNG</li>
+                            <li class="student-info"><span class="info">Số CMTND &emsp; :</span> 004***24</li>
+                            <li class="student-info"><span class="info">Nơi cấp &emsp; :</span> CAO BẰNG</li>
+                            <li class="student-info"><span class="info">Họ tên bố &emsp; :</span> NGUYỄN VIẾT THIÊN</li>
+                            <li class="student-info"><span class="info">Năm sinh &emsp; :</span> 1967</li>
+                            <li class="student-info"><span class="info">Nghề nghiệp &emsp; :</span> KỸ SƯ</li>
+                            <li class="student-info"><span class="info">Điện thoại &emsp; :</span> 091***45</li>
+                            <li class="student-info"><span class="info">Email &emsp; :</span> NG*@*IL.COM</li>
+                        </ul>
+                    </div>
+                    <div class="main-content-item" style="width: 50%; margin-left: 30px;">
+                        <ul class="student-info-list">
+                            <li class="student-info"><span class="info">Tôn giáo &emsp; :</span> KHÔNG</li>
+                            <li class="student-info"><span class="info">Trường THPT &emsp; :</span> THPT CHUYÊN CAO BẰNG</li>
+                            <li class="student-info"><span class="info">Hộ khẩu &emsp; :</span> PHƯỜNG NGỌC XUÂN, THÀNH PHỐ CAO BẰNG, TỈNH CAO BẰNG</li>
+                            <li class="student-info"><span class="info">Số Điện thoại &emsp; :</span> 034***28</li>
+                            <li class="student-info"><span class="info">Họ tên mẹ &emsp; :</span> NGUYẾT TUYẾT NGA</li>
+                            <li class="student-info"><span class="info">Năm sinh &emsp; :</span> 1966</li>
+                            <li class="student-info"><span class="info">Nghề nghiệp &emsp; :</span> HƯU CHÍ</li>
+                            <li class="student-info"><span class="info">Điện thoại &emsp; :</span> 038***66</li>
+                            <li class="student-info"><span class="info">Email &emsp; :</span> KHÔNG CÓ</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+    var input = window.location.search;
+    var data = new URLSearchParams(input);
+    var name_ = data.get("name_");
+    var year = data.get("year");
+    var level = data.get("level");
+    var program = data.get("program");
+    var school = data.get("school");
+    var status_ = data.get("status_");
+    var gender = data.get("gender");
+    var class_ = data.get("class");
+    var course = data.get("course");
+    var email = data.get("email");
+    // console.log(name+" " + status_+" "+email)
+    if(name_ == null) console.log(name_)
+    if(name_)
+        {document.getElementById("name_").innerHTML = name_; console.log("hello")}
+    if(year)
+        document.getElementById("year").innerHTML = year
+    if(level)
+        document.getElementById("level").innerHTML = level
+    if(program)
+        document.getElementById("program").innerHTML = program
+    if(school)
+        document.getElementById("school").innerHTML = school
+    if(status_)
+        document.getElementById("status_").innerHTML = status_
+    if(gender)
+        document.getElementById("gender").innerHTML = gender
+    if(class_)
+        document.getElementById("class").innerHTML = class_
+    if(course)
+        document.getElementById("course").innerHTML = course
+    if(email)
+        document.getElementById("email").innerHTML = email
+
+</script>
+
+    <!-- Footer -->
+    <!-- <footer class="footer-wrapper">
+        <div class="footer-container">
+            <div class="footer-content right-content">
+                <hr style="border-top: 1px solid #eee;border-bottom: 1px solid #fff;">
+                <div style="padding: 8px 0; font-weight: 700;">Trường Đại học Bách Khoa Hà Nội</div>
+                <div style="padding-bottom: 20px;">Số 1 Đại Cồ Việt, Hai Bà Trưng, Hà Nội</div>
+            </div>
+        </div>
+    </footer> -->
+</body>
+</html>
+
+
+
+<label><strong>Lớp: </strong></label>
+            <input type="text" id="study" name="study" placeholder="Khoa học máy tính 05-K65" required><br><br>
+
+            <label><strong>Khóa học: </strong></label>
+            <input type="text" id="KH" name="KH" placeholder="65" required><br><br>
+
+            <label><strong>EMAIL: </strong></label>
+            <input type="email" id="email" name="email" placeholder="@sis.hust.edu.vn" required><br><br>
+
+
+            <input type="submit" value="Submit">
+            <button type="button" id="cancel-btn">Cancel</button>

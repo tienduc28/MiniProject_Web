@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Personal Information</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  </head>
+
+
+<body>
+    <div id="menu" style="width: auto;">
+        <div id="side-menu">
+          <table class="menu-table">
+            <tr>
+              <td id="title" style="text-align: center;">
+                <img src="./image/Avatar.png" alt="Avatar"
+                  style="border-radius: 50%; width: 20px; height: 20px; box-shadow: 0px 0px 0px">
+                <strong>TRẦN TIẾN ĐỨC</strong>
+              </td>
+            </tr>
+            <tr>
+              <td><a href="#">Thư báo</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">Đổi mật khẩu</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">Cấp lại mật khẩu Email trường</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">Thoát đăng nhập</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">Thông tin mật khẩu Email cấp mới</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">Xác nhận khai báo y tế</a></td>
+            </tr>
+            <tr></tr>
+          </table>
+          <div class="divider"></div>
+          <table class="menu-table">
+            <tr>
+              <td id="title" style="text-align: center;"><strong>QUẢN LÝ HỒ SƠ SINH VIÊN</strong></td>
+            </tr>
+            <tr>
+              <td><a href="#">Thông tin sinh viên</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">Cập nhật thông tin cá nhân</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">Thông tin lớp sinh viên</a></td>
+            </tr>
+            <tr></tr>
+          </table>
+          <div class="divider"></div>
+          <table class="menu-table">
+            <tr>
+              <td id="title" style="text-align: center;"><strong>ĐÀO TẠO</strong></td>
+            </tr>
+            <tr>
+              <td><a href="#">Chương trình đào tạo</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">Kế hoạch học tập</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">Kết quả học tập</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">Đồ án - Tốt nghiệp</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">Thời khóa biểu tạm thời</a></td>
+            </tr>
+            <tr></tr>
+          </table>
+        </div>
+    
+        <div id="right-container">
+          <div id="title" style="text-align: center;">
+            <h2>THÔNG TIN CÁ NHÂN</h2>
+            <hr id="hr-title">
+          </div>
+          <div id="title" style="display: flex; justify-content: space-between;">
+            <h2>THÔNG TIN SINH VIÊN 
+            <hr id="hr-detail">
+          </div>
+          
+          <div id="right-row-1">
+            <div class="avatar">
+              <div id="imageContainer">
+                <img id="myImage" src="./image/Avatar.png" alt="Ảnh mặc định">
+              </div>
+              <!-- <img src="./image/Avatar.png" alt="Student"> -->
+              <input type="file" id="fileInput" style="display: none;">
+              <button onclick="chooseFile()">Chọn ảnh từ máy tính</button>  
+              <hr style="width: 80%;">
+              <div style="text-align: center;">
+                <b>MSSV</b> 20204643
+              </div>
+            </div>
+           
+            
+            <div class="columnTTSV" id="thongTinSinhVien">
+
+              <b>Họ và tên: </b>
+              <input id="full-name" type="text" placeholder="Nguyễn Văn A" required><br>
+
+              <b>Năm vào trường: </b>
+              <input id="year" type="number" placeholder="2020" required><br>
+
+              <b>Bậc đào tạo: </b>
+              <select id="education-level">
+                <option value="Đại học đại trà">Đại học đại trà</option>
+                <option value="Đại học">Đại học</option>  
+                </select><br>
+
+              <b>Chương trình: </b>
+              <input type="text" id="course" name="course" placeholder="Khoa học máy tính 2020" required><br>
+
+              <b>Khoa/Viện quản lý: </b>
+              <input type="text" id="school" name="school" placeholder="Trường Công nghệ Thông tin và Truyền Thông" required><br>
+
+              <b>Tình trạng học tập: </b>
+              <select id="status">
+                <option value="Đang học">Đang học</option>
+                <option value="Thôi học">Thôi học</option>
+              </select><br>
+            </div>
+    
+            <div class="columnTTSV">
+               <b>Giới tính: </b>
+               <select id="sex">
+                <option value="Nam">Nam</option>
+                <option value="Nữ">Nữ</option>
+               </select> <br>
+
+              <b>Lớp: </b>
+              <input type="text" id="study" name="study" placeholder="Khoa học máy tính 05-K65" required><br>
+
+              <b>Khóa học: </b>
+              <input type="text" id="KH" name="KH" placeholder="65" required><br>
+
+              <b>Email: </b>
+              <input type="email" id="email" name="email" placeholder="@sis.hust.edu.vn" required><br>
+
+              <input type="submit" value="Submit" onclick="save()">
+              <button type="button" id="reset-btn" onclick="reset()">Reset</button>
+              <button type="button" id="cancel-btn" onclick="cancel()">Cancel</button> 
+            </div>
+          
+          </div>
+    
+          <div id="title">
+            <h2>THÔNG TIN HỌC TẬP</h2>
+            <hr id="hr-detail">
+          </div>
+          <div id="right-row-2">
+            <div class="item">
+              <b>Tổng kết học kỳ: </b> 20231<br>
+              <b>Trung bình tích lũy: </b> 2.83<br>
+              <b>Số TC nợ đăng ký: </b> 7<br>
+            </div>
+    
+            <div class="item">
+              <b>Số TC tích lũy: </b> 102<br>
+              <b>Trình độ sinh viên: </b> 4<br>
+              <b>Mức cảnh báo: </b> M0 <br>
+            </div>
+          </div>
+    
+          <div id="title">
+            <h2>THÔNG TIN CÁ NHÂN</h2>
+            <hr id="hr-detail">
+          </div>
+          <div id="right-row-3">
+            <div class="item">
+              <b>Dân tộc: </b> KINH<br>
+              <b>Năm TN cấp 3: </b> 2020 <br>
+              <b>Địa chỉ: </b> THỊ TRẤN BÍCH ĐỘNG, HUYỆN VIỆT YÊN, TỈNH BẮC GIANG <br>
+              <b>Số CMTND: </b> 122***98 <br>
+              <b>Họ tên bố: </b> TRẦN NAM TÂN<br>
+              <b>Năm sinh: </b> 1971 <br>
+              <b>Nghề nghiệp: </b> KINH DOANH <br>
+              <b>Điện thoại: </b> 096***81 <br>
+              <b>EMAIL: </b> KI*@*IL.COM <br>
+            </div>
+    
+            <div class="item">
+              <b>Tôn giáo: </b> KHÔNG <br>
+              <b>Trường THPT: </b> THPT VIỆT YÊN SỐ 1 - BẮC GIANG <br>
+              <b>Hộ khẩu: </b> THỊ TRẤN BÍCH ĐỘNG, HUYỆN VIỆT YÊN, TỈNH BẮC GIANG <br>
+              <b>Số Điện thoại: </b> 033***86 <br>
+              <b>Họ tên mẹ: </b> VŨ THỊ THẢO <br>
+              <b>Năm sinh: </b> 1976 <br>
+              <b>Nghề nghiệp: </b> GIÁO VIÊN <br>
+              <b>Điện thoại: </b> 097***65 <br>
+              <b>EMAIL: </b> VT*@*DU.VN <br>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+      <script src="./script.js"></script>
+</body>
+<script>
+      $(document).ready(function () {
+        if(info.fullname==null){
+          document.getElementById("full-name").value=TTSV.hoTen
+          document.getElementById("year").value=TTSV.namVaoTruong
+          document.getElementById("education-level").value=TTSV.bacDaoTao
+          document.getElementById("course").value=TTSV.chuongTrinh
+          document.getElementById("school").value=TTSV.khoaVienQuanLy
+          document.getElementById("status").value=TTSV.tinhTrangHocTap
+          document.getElementById("sex").value=TTSV.gioiTinh
+          document.getElementById("study").value=TTSV.lop
+          document.getElementById("KH").value=TTSV.khoaHoc
+          document.getElementById("email").value=TTSV.email
+        
+        } else{
+          document.getElementById("full-name").value=info.fullname
+          document.getElementById("year").value=info.year
+          document.getElementById("education-level").value=info.educationlevel
+          document.getElementById("course").value=info.course
+          document.getElementById("school").value=info.school
+          document.getElementById("status").value=info.status
+          document.getElementById("sex").value=TTSV.gioiTinh
+          document.getElementById("study").value=info.study
+          document.getElementById("KH").value=info.KH
+          document.getElementById("email").value=info.email
+        }
+  });
+
+
+  function save(){
+    localStorage.setItem('fullName',document.getElementById('full-name').value);
+    localStorage.setItem('year',document.getElementById('year').value);
+    localStorage.setItem('educationLevel',document.getElementById('education-level').value);
+    localStorage.setItem('course',document.getElementById('course').value);
+    localStorage.setItem('school',document.getElementById('school').value);
+    localStorage.setItem('status',document.getElementById('status').value);
+    localStorage.setItem('sex',document.getElementById('sex').value);
+    localStorage.setItem('study',document.getElementById('study').value);
+    localStorage.setItem('KH',document.getElementById('KH').value);
+    localStorage.setItem('email',document.getElementById('email').value);
+    
+    
+    window.location.href = "index.html";
+  }
+
+  function reset(){
+    document.getElementById("full-name").value=TTSV.hoTen
+          document.getElementById("year").value=TTSV.namVaoTruong
+          document.getElementById("education-level").value=TTSV.bacDaoTao
+          document.getElementById("course").value=TTSV.chuongTrinh
+          document.getElementById("school").value=TTSV.khoaVienQuanLy
+          document.getElementById("status").value=TTSV.tinhTrangHocTap
+          document.getElementById("sex").value=TTSV.gioiTinh
+          document.getElementById("study").value=TTSV.lop
+          document.getElementById("KH").value=TTSV.khoaHoc
+          document.getElementById("email").value=TTSV.email
+  }
+
+  function cancel() {
+    window.location.href="index.html"
+  }
+
+
+</script>
+
+</html>
